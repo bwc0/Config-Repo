@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config-service
+  config:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/bwc0/VendorApi/tree/spring-cloud-integration-branch/config-server
+          clone-on-start: true
+
+server:
+  port: 8888
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include=*:
+

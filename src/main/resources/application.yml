@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/bwc0/VendorApi/tree/spring-cloud-integration-branch/config-server
+          uri: https://github.com/bwc0/Config-Repo
           clone-on-start: true
 
 server:
@@ -17,5 +17,5 @@ management:
   endpoints:
     web:
       exposure:
-        include=*:
+        include: '*'
 

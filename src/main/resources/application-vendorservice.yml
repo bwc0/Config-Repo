@@ -3,8 +3,8 @@ spring:
     allow-bean-definition-overriding: true
   datasource:
     url: jdbc:mysql://localhost:3306/vendor?useSSL=false&serverTimezone=UTC
-    username: root
-    password: rootpassword
+#    username: root
+#    password: rootpassword
     platform: mysql
     initialization-mode: always
   jpa:
